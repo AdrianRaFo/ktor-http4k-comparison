@@ -4,5 +4,10 @@ plugins {
 
 repositories {
     mavenCentral()
+    jcenter()
 }
-
+dependencies{
+    compile "org.http4k:http4k-core:$http4k_version"
+    compile "org.http4k:http4k-server-jetty:$http4k_version"
+    compile "org.http4k:http4k-client-apache-async:$http4k_version"
+}
